@@ -1,0 +1,13 @@
++-----------+    +--------------+    +-------------+
+| customers |    | appointments |    |   services  |
++-----------+    +--------------+    +-------------+
+| id       *|----| customer_id  |    | id         *|
+| name      |    | id          *|    | service_name|
+| phone     |    | service_id   |----| service_id  |
+| email     |    | date         |    | price       |
+| address   |    | time         |    +-------------+
+| rv_length |    | notes        |
++-----------+    +--------------+
+
+
+need to link foreign key

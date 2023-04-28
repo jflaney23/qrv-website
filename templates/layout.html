@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QRV Detailing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 50px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #3a3a3a;
+      text-shadow: 2px 2px 0 #999;
+    }
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav button {
+      font-size: 1rem;
+      color: #3a3a3a;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-right: 10px;
+      transition: background-color 0.3s;
+    }
+    .nav button:hover {
+      background-color: #f0f0f0;
+    }
+    .page-title {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      font-size: 1.5rem;
+      color: #3a3a3a;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <button onclick="window.location.href='/'">Home</button>
+    <button onclick="window.location.href='/packages'">Packages</button>
+    <button onclick="window.location.href='/schedule'">Schedule</button>
+    <button onclick="window.location.href='/about_us'">About Us</button>
+  </nav>
+  <h1 class="page-title">{% block title %} {% endblock %}</h1>
+</body>
+</html>
