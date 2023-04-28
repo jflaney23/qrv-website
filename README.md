@@ -1,2 +1,2 @@
 # qrv-website
-first attempt at my website
+This is my first attempt at my own website.
