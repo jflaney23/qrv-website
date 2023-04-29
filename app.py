@@ -12,9 +12,12 @@ def index():
 def packages():
     return render_template("packages.html")
 
-@app.route("/schedule")
+@app.route("/schedule", methods=["GET", "POST"])
 def schedule():
-    return render_template("schedule.html")
+    if request.method == "POST"
+        return render_template("schedule.html")
+    else:
+        return render_template("schedule.html")
 
 @app.route("/about_us")
 def about_us():
