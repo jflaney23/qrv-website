@@ -5,16 +5,28 @@
 {% endblock %}
 
 {% block main %} 
+
 <form action="/schedule" method="post">
     <input type="text" name="name" id="name" placeholder="Your Name" required>
     <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
     <input type="email" name="email" id="email" placeholder="Email" required>
     <input type="text" name="address" id="address" placeholder="Address" required>
     <input type="text" name="rv_length" id="rv_length" placeholder="RV Length" required>
-    <button type="submit">Submit</button>
+    <button id = "button" type="submit">Submit</button>
      </form>
+
+     <p id="message"></p>
+
+<script>
+
+button.addEventListener("click", () => {
+  message.innerHTML = "Form Submitted";
+});
+
+
+</script>
+
     </body>
     </html>
 {% endblock %}
-
 
