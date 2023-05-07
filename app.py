@@ -28,7 +28,8 @@ def schedule():
         email = request.form.get("email")
         address = request.form.get("address")
         rv_length = request.form.get("rv_length")
-        cursor.execute("INSERT INTO customers(name, phone, email, address, rv_length) VALUES (?, ?, ?, ?, ?)", (name, phone, email, address, rv_length))
+        message = request.form.get("message")
+        cursor.execute("INSERT INTO customers(name, phone, email, address, rv_length, message) VALUES (?, ?, ?, ?, ?, ?)", (name, phone, email, address, rv_length, message))
         db.commit()
         return render_template("schedule.html")
     else:
