@@ -7,7 +7,8 @@
 | email     |    | date         |    | price       |
 | address   |    | time         |    +-------------+
 | rv_length |    | notes        |
-+-----------+    +--------------+
+| message   |     +--------------+
++-----------+    
 
 
 need to link foreign key
